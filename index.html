@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="kalkulator">
+        <form>
+            <div type="text" id="layar" disabled></div>
+            <div class="kalkulator-key">
+                <div class="dark-mode">
+                    <div class="kalkulator-kanan">
+                        <button type="button" type="button">Reset</button>
+                        <button type="button" onclick='masukkan("(")'>(</button>
+                        <button type="button" onclick='masukkan(")")'>)</button>
+                        <button type="button" onclick="persen()">%</button>
+                        <button type="button" onclick="bersihkan()">CLEAR</button>
+                        <button type="button" class="num" onclick="masukkan('7')">7</button>
+                        <button type="button" class="num" onclick="masukkan('8')">8</button>
+                        <button type="button" class="num" onclick="masukkan('9')">9</button>
+                        <button type="button" onclick="masukkan('/')">÷</button>
+                        <button type="button" class="num" onclick="masukkan('4')">4</button>
+                        <button type="button" class="num" onclick="masukkan('5')">5</button>
+                        <button type="button" class="num" onclick="masukkan('6')">6</button>
+                        <button type="button" onclick="masukkan('*')">*</button>
+                        <button type="button" class="num" onclick="masukkan('1')">1</button>
+                        <button type="button" class="num" onclick="masukkan('2')">2</button>
+                        <button type="button" class="num" onclick="masukkan('3')">3</button>
+                        <button type="button" onclick="masukkan('-')">-</button>
+                        <button type="button" class="num" onclick="masukkan('0')">0</button>
+                        <button type="button" onclick="masukkan('.')">.</button>
+                        <button type="button" class="samade" onclick="hitung()">=</button>
+                        <button type="button" onclick="masukkan('+')">+</button>
+                        <button type="button" onclick="sinus()">sin</button>
+                        <button type="button" onclick="cosinus()">cos</button>
+                        <button type="button" onclick="tangen()">tan</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
